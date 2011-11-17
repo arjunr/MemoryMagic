@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* MemoryGameAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* MemoryGameAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		7B518FF913A0E7A4007C17A8 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B518FF413A0E7A4007C17A8 /* NSObject+SBJSON.m */; };
+		7B518FFA13A0E7A4007C17A8 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B518FF613A0E7A4007C17A8 /* NSString+SBJSON.m */; };
+		7B518FFB13A0E7A4007C17A8 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B518FF813A0E7A4007C17A8 /* SBJSON.m */; };
+		7B5190FB13A1EC8E007C17A8 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B5190FA13A1EC8E007C17A8 /* icon.png */; };
+		7B51918C13A20EA2007C17A8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B51918B13A20EA2007C17A8 /* AudioToolbox.framework */; };
+		7B51919513A21049007C17A8 /* button-15.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7B51919413A21049007C17A8 /* button-15.wav */; };
+		7B5191A013A21576007C17A8 /* alien_28.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7B51919F13A21576007C17A8 /* alien_28.wav */; };
+		7B5191FF13A22E6E007C17A8 /* applause-2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7B5191FE13A22E6E007C17A8 /* applause-2.wav */; };
+		7B663C1E139F71A800A2D1F5 /* FBConnectGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B663C0C139F71A800A2D1F5 /* FBConnectGlobal.m */; };
+		7B663C1F139F71A800A2D1F5 /* FBSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B663C0E139F71A800A2D1F5 /* FBSession.m */; };
+		7B663C20139F71A800A2D1F5 /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B663C10139F71A800A2D1F5 /* FBRequest.m */; };
+		7B663C21139F71A800A2D1F5 /* FBXMLHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B663C12139F71A800A2D1F5 /* FBXMLHandler.m */; };
+		7B663C22139F71A800A2D1F5 /* FBLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B663C14139F71A800A2D1F5 /* FBLoginButton.m */; };
+		7B663C23139F71A800A2D1F5 /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B663C16139F71A800A2D1F5 /* FBDialog.m */; };
+		7B663C24139F71A800A2D1F5 /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B663C18139F71A800A2D1F5 /* FBLoginDialog.m */; };
+		7B663C25139F71A800A2D1F5 /* FBPermissionDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B663C1A139F71A800A2D1F5 /* FBPermissionDialog.m */; };
+		7B663C26139F71A800A2D1F5 /* FBStreamDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B663C1C139F71A800A2D1F5 /* FBStreamDialog.m */; };
+		7B663C27139F71A800A2D1F5 /* FBConnect.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7B663C1D139F71A800A2D1F5 /* FBConnect.bundle */; };
+		7B663C3B139F71F700A2D1F5 /* FacebookController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B663C3A139F71F700A2D1F5 /* FacebookController.m */; };
+		7B663C40139F722600A2D1F5 /* FacebookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B663C3F139F722600A2D1F5 /* FacebookView.xib */; };
+		7B663E1813A099A800A2D1F5 /* color1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B663E1313A099A800A2D1F5 /* color1.png */; };
+		7B663E1913A099A800A2D1F5 /* color2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B663E1413A099A800A2D1F5 /* color2.png */; };
+		7B663E1A13A099A800A2D1F5 /* color3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B663E1513A099A800A2D1F5 /* color3.png */; };
+		7B663E1B13A099A800A2D1F5 /* color4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B663E1613A099A800A2D1F5 /* color4.png */; };
+		7B663E1C13A099A800A2D1F5 /* color5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B663E1713A099A800A2D1F5 /* color5.png */; };
+		7B663E2F13A09BF900A2D1F5 /* color0.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B663E2E13A09BF900A2D1F5 /* color0.png */; };
+		7B663F3713A0C28200A2D1F5 /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B663F3613A0C28200A2D1F5 /* img1.png */; };
+		7B663F4013A0C35100A2D1F5 /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B663F3C13A0C35100A2D1F5 /* img2.png */; };
+		7B663F4113A0C35100A2D1F5 /* img3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B663F3D13A0C35100A2D1F5 /* img3.png */; };
+		7B663F4213A0C35100A2D1F5 /* img4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B663F3E13A0C35100A2D1F5 /* img4.png */; };
+		7B663F4313A0C35100A2D1F5 /* img5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B663F3F13A0C35100A2D1F5 /* img5.png */; };
+		7B663F4713A0C43F00A2D1F5 /* img0.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B663F4613A0C43F00A2D1F5 /* img0.png */; };
+		7B663F5213A0C69500A2D1F5 /* level21.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B663F4A13A0C69500A2D1F5 /* level21.png */; };
+		7B663F5313A0C69500A2D1F5 /* level22.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B663F4B13A0C69500A2D1F5 /* level22.png */; };
+		7B663F5413A0C69500A2D1F5 /* level23.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B663F4C13A0C69500A2D1F5 /* level23.png */; };
+		7B663F5513A0C69500A2D1F5 /* level24.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B663F4D13A0C69500A2D1F5 /* level24.png */; };
+		7B663F5613A0C69500A2D1F5 /* level25.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B663F4E13A0C69500A2D1F5 /* level25.png */; };
+		7B663F5713A0C69500A2D1F5 /* level26.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B663F4F13A0C69500A2D1F5 /* level26.png */; };
+		7B663F5813A0C69500A2D1F5 /* level27.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B663F5013A0C69500A2D1F5 /* level27.png */; };
+		7B663F5913A0C69500A2D1F5 /* level28.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B663F5113A0C69500A2D1F5 /* level28.png */; };
+		7B663F6613A0CCB400A2D1F5 /* level20.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B663F6513A0CCB400A2D1F5 /* level20.png */; };
+		7B86AF3C1399E6100011918B /* GameLostController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B86AF3B1399E6100011918B /* GameLostController.m */; };
+		7B86AF411399E66F0011918B /* GameLost.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B86AF401399E66F0011918B /* GameLost.xib */; };
+		7BA8868E1398D9780090D639 /* LevelOneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA8868D1398D9780090D639 /* LevelOneController.m */; };
+		7BA886921398D9CA0090D639 /* LevelOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BA886911398D9CA0090D639 /* LevelOne.xib */; };
+		7BA886B31398E2F80090D639 /* LevelTwoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA886B21398E2F80090D639 /* LevelTwoController.m */; };
+		7BA886B71398E34D0090D639 /* LevelTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BA886B61398E34D0090D639 /* LevelTwo.xib */; };
+		7BCE197D1399F8030057983E /* StartupPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE197C1399F8030057983E /* StartupPageController.m */; };
+		7BCE19811399F81E0057983E /* StartupPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BCE19801399F81E0057983E /* StartupPage.xib */; };
+		7BCE19881399F8DF0057983E /* MemoryGamePic.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BCE19871399F8DF0057983E /* MemoryGamePic.png */; };
+		7BCE1ABD139A1CFD0057983E /* LevelThreeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE1ABC139A1CFD0057983E /* LevelThreeController.m */; };
+		7BCE1AC1139A1D100057983E /* LevelThree.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BCE1AC0139A1D100057983E /* LevelThree.xib */; };
+		7BCE1EE2139CE93D0057983E /* GameOverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE1EE1139CE93D0057983E /* GameOverController.m */; };
+		7BCE1EE6139CE9480057983E /* GameOver.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BCE1EE5139CE9480057983E /* GameOver.xib */; };
+		7BDE3749139E2C2100785688 /* MarkingScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDE3748139E2C2100785688 /* MarkingScheme.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* MemoryGameAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryGameAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* MemoryGameAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryGameAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* MemoryGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* MemoryGame_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryGame_Prefix.pch; sourceTree = "<group>"; };
+		7B518FF213A0E7A4007C17A8 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		7B518FF313A0E7A4007C17A8 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		7B518FF413A0E7A4007C17A8 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		7B518FF513A0E7A4007C17A8 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		7B518FF613A0E7A4007C17A8 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		7B518FF713A0E7A4007C17A8 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		7B518FF813A0E7A4007C17A8 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		7B51900113A0E995007C17A8 /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
+		7B5190FA13A1EC8E007C17A8 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		7B51918B13A20EA2007C17A8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7B51919413A21049007C17A8 /* button-15.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "button-15.wav"; sourceTree = "<group>"; };
+		7B51919F13A21576007C17A8 /* alien_28.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alien_28.wav; sourceTree = "<group>"; };
+		7B5191FE13A22E6E007C17A8 /* applause-2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "applause-2.wav"; sourceTree = "<group>"; };
+		7B663C0A139F71A800A2D1F5 /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBConnect.h; path = "../../Downloads/MyGradesTutorial 4/facebook-iphone-sdk/src/FBConnect/FBConnect.h"; sourceTree = SOURCE_ROOT; };
+		7B663C0B139F71A800A2D1F5 /* FBConnectGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBConnectGlobal.h; path = "../../Downloads/MyGradesTutorial 4/facebook-iphone-sdk/src/FBConnect/FBConnectGlobal.h"; sourceTree = SOURCE_ROOT; };
+		7B663C0C139F71A800A2D1F5 /* FBConnectGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBConnectGlobal.m; path = "../../Downloads/MyGradesTutorial 4/facebook-iphone-sdk/src/FBConnectGlobal.m"; sourceTree = SOURCE_ROOT; };
+		7B663C0D139F71A800A2D1F5 /* FBSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBSession.h; path = "../../Downloads/MyGradesTutorial 4/facebook-iphone-sdk/src/FBConnect/FBSession.h"; sourceTree = SOURCE_ROOT; };
+		7B663C0E139F71A800A2D1F5 /* FBSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBSession.m; path = "../../Downloads/MyGradesTutorial 4/facebook-iphone-sdk/src/FBSession.m"; sourceTree = SOURCE_ROOT; };
+		7B663C0F139F71A800A2D1F5 /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBRequest.h; path = "../../Downloads/MyGradesTutorial 4/facebook-iphone-sdk/src/FBConnect/FBRequest.h"; sourceTree = SOURCE_ROOT; };
+		7B663C10139F71A800A2D1F5 /* FBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBRequest.m; path = "../../Downloads/MyGradesTutorial 4/facebook-iphone-sdk/src/FBRequest.m"; sourceTree = SOURCE_ROOT; };
+		7B663C11139F71A800A2D1F5 /* FBXMLHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBXMLHandler.h; path = "../../Downloads/MyGradesTutorial 4/facebook-iphone-sdk/src/FBXMLHandler.h"; sourceTree = SOURCE_ROOT; };
+		7B663C12139F71A800A2D1F5 /* FBXMLHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBXMLHandler.m; path = "../../Downloads/MyGradesTutorial 4/facebook-iphone-sdk/src/FBXMLHandler.m"; sourceTree = SOURCE_ROOT; };
+		7B663C13139F71A800A2D1F5 /* FBLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBLoginButton.h; path = "../../Downloads/MyGradesTutorial 4/facebook-iphone-sdk/src/FBConnect/FBLoginButton.h"; sourceTree = SOURCE_ROOT; };
+		7B663C14139F71A800A2D1F5 /* FBLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBLoginButton.m; path = "../../Downloads/MyGradesTutorial 4/facebook-iphone-sdk/src/FBLoginButton.m"; sourceTree = SOURCE_ROOT; };
+		7B663C15139F71A800A2D1F5 /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBDialog.h; path = "../../Downloads/MyGradesTutorial 4/facebook-iphone-sdk/src/FBConnect/FBDialog.h"; sourceTree = SOURCE_ROOT; };
+		7B663C16139F71A800A2D1F5 /* FBDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBDialog.m; path = "../../Downloads/MyGradesTutorial 4/facebook-iphone-sdk/src/FBDialog.m"; sourceTree = SOURCE_ROOT; };
+		7B663C17139F71A800A2D1F5 /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBLoginDialog.h; path = "../../Downloads/MyGradesTutorial 4/facebook-iphone-sdk/src/FBConnect/FBLoginDialog.h"; sourceTree = SOURCE_ROOT; };
+		7B663C18139F71A800A2D1F5 /* FBLoginDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBLoginDialog.m; path = "../../Downloads/MyGradesTutorial 4/facebook-iphone-sdk/src/FBLoginDialog.m"; sourceTree = SOURCE_ROOT; };
+		7B663C19139F71A800A2D1F5 /* FBPermissionDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBPermissionDialog.h; path = "../../Downloads/MyGradesTutorial 4/facebook-iphone-sdk/src/FBConnect/FBPermissionDialog.h"; sourceTree = SOURCE_ROOT; };
+		7B663C1A139F71A800A2D1F5 /* FBPermissionDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBPermissionDialog.m; path = "../../Downloads/MyGradesTutorial 4/facebook-iphone-sdk/src/FBPermissionDialog.m"; sourceTree = SOURCE_ROOT; };
+		7B663C1B139F71A800A2D1F5 /* FBStreamDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBStreamDialog.h; path = "../../Downloads/MyGradesTutorial 4/facebook-iphone-sdk/src/FBConnect/FBStreamDialog.h"; sourceTree = SOURCE_ROOT; };
+		7B663C1C139F71A800A2D1F5 /* FBStreamDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBStreamDialog.m; path = "../../Downloads/MyGradesTutorial 4/facebook-iphone-sdk/src/FBStreamDialog.m"; sourceTree = SOURCE_ROOT; };
+		7B663C1D139F71A800A2D1F5 /* FBConnect.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBConnect.bundle; path = "../../Downloads/MyGradesTutorial 4/facebook-iphone-sdk/src/FBConnect.bundle"; sourceTree = SOURCE_ROOT; };
+		7B663C39139F71F700A2D1F5 /* FacebookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacebookController.h; path = ../FacebookController.h; sourceTree = "<group>"; };
+		7B663C3A139F71F700A2D1F5 /* FacebookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacebookController.m; path = ../FacebookController.m; sourceTree = "<group>"; };
+		7B663C3F139F722600A2D1F5 /* FacebookView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FacebookView.xib; path = ../FacebookView.xib; sourceTree = "<group>"; };
+		7B663E1313A099A800A2D1F5 /* color1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color1.png; sourceTree = "<group>"; };
+		7B663E1413A099A800A2D1F5 /* color2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color2.png; sourceTree = "<group>"; };
+		7B663E1513A099A800A2D1F5 /* color3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color3.png; sourceTree = "<group>"; };
+		7B663E1613A099A800A2D1F5 /* color4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color4.png; sourceTree = "<group>"; };
+		7B663E1713A099A800A2D1F5 /* color5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color5.png; sourceTree = "<group>"; };
+		7B663E2E13A09BF900A2D1F5 /* color0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color0.png; sourceTree = "<group>"; };
+		7B663F3613A0C28200A2D1F5 /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
+		7B663F3C13A0C35100A2D1F5 /* img2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img2.png; sourceTree = "<group>"; };
+		7B663F3D13A0C35100A2D1F5 /* img3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img3.png; sourceTree = "<group>"; };
+		7B663F3E13A0C35100A2D1F5 /* img4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img4.png; sourceTree = "<group>"; };
+		7B663F3F13A0C35100A2D1F5 /* img5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img5.png; sourceTree = "<group>"; };
+		7B663F4613A0C43F00A2D1F5 /* img0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img0.png; sourceTree = "<group>"; };
+		7B663F4A13A0C69500A2D1F5 /* level21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level21.png; sourceTree = "<group>"; };
+		7B663F4B13A0C69500A2D1F5 /* level22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level22.png; sourceTree = "<group>"; };
+		7B663F4C13A0C69500A2D1F5 /* level23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level23.png; sourceTree = "<group>"; };
+		7B663F4D13A0C69500A2D1F5 /* level24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level24.png; sourceTree = "<group>"; };
+		7B663F4E13A0C69500A2D1F5 /* level25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level25.png; sourceTree = "<group>"; };
+		7B663F4F13A0C69500A2D1F5 /* level26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level26.png; sourceTree = "<group>"; };
+		7B663F5013A0C69500A2D1F5 /* level27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level27.png; sourceTree = "<group>"; };
+		7B663F5113A0C69500A2D1F5 /* level28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level28.png; sourceTree = "<group>"; };
+		7B663F6513A0CCB400A2D1F5 /* level20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level20.png; sourceTree = "<group>"; };
+		7B86AF3A1399E6100011918B /* GameLostController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLostController.h; sourceTree = "<group>"; };
+		7B86AF3B1399E6100011918B /* GameLostController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLostController.m; sourceTree = "<group>"; };
+		7B86AF401399E66F0011918B /* GameLost.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameLost.xib; sourceTree = "<group>"; };
+		7BA8868C1398D9780090D639 /* LevelOneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelOneController.h; sourceTree = "<group>"; };
+		7BA8868D1398D9780090D639 /* LevelOneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelOneController.m; sourceTree = "<group>"; };
+		7BA886911398D9CA0090D639 /* LevelOne.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LevelOne.xib; sourceTree = "<group>"; };
+		7BA886B11398E2F80090D639 /* LevelTwoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTwoController.h; sourceTree = "<group>"; };
+		7BA886B21398E2F80090D639 /* LevelTwoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTwoController.m; sourceTree = "<group>"; };
+		7BA886B61398E34D0090D639 /* LevelTwo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LevelTwo.xib; sourceTree = "<group>"; };
+		7BCE197B1399F8030057983E /* StartupPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartupPageController.h; sourceTree = "<group>"; };
+		7BCE197C1399F8030057983E /* StartupPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartupPageController.m; sourceTree = "<group>"; };
+		7BCE19801399F81E0057983E /* StartupPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartupPage.xib; sourceTree = "<group>"; };
+		7BCE19871399F8DF0057983E /* MemoryGamePic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MemoryGamePic.png; sourceTree = "<group>"; };
+		7BCE1ABB139A1CFD0057983E /* LevelThreeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelThreeController.h; sourceTree = "<group>"; };
+		7BCE1ABC139A1CFD0057983E /* LevelThreeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelThreeController.m; sourceTree = "<group>"; };
+		7BCE1AC0139A1D100057983E /* LevelThree.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LevelThree.xib; sourceTree = "<group>"; };
+		7BCE1EE0139CE93D0057983E /* GameOverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverController.h; sourceTree = "<group>"; };
+		7BCE1EE1139CE93D0057983E /* GameOverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverController.m; sourceTree = "<group>"; };
+		7BCE1EE5139CE9480057983E /* GameOver.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameOver.xib; sourceTree = "<group>"; };
+		7BDE3747139E2C2100785688 /* MarkingScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkingScheme.h; sourceTree = "<group>"; };
+		7BDE3748139E2C2100785688 /* MarkingScheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkingScheme.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* MemoryGame-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MemoryGame-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				7B51918C13A20EA2007C17A8 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7B51900113A0E995007C17A8 /* FlickrAPIKey.h */,
+				1D3623240D0F684500981E51 /* MemoryGameAppDelegate.h */,
+				1D3623250D0F684500981E51 /* MemoryGameAppDelegate.m */,
+				7BCE197B1399F8030057983E /* StartupPageController.h */,
+				7BCE197C1399F8030057983E /* StartupPageController.m */,
+				7BCE19801399F81E0057983E /* StartupPage.xib */,
+				7BA8868C1398D9780090D639 /* LevelOneController.h */,
+				7BA8868D1398D9780090D639 /* LevelOneController.m */,
+				7BA886911398D9CA0090D639 /* LevelOne.xib */,
+				7BA886B11398E2F80090D639 /* LevelTwoController.h */,
+				7BA886B21398E2F80090D639 /* LevelTwoController.m */,
+				7BA886B61398E34D0090D639 /* LevelTwo.xib */,
+				7B86AF3A1399E6100011918B /* GameLostController.h */,
+				7B86AF3B1399E6100011918B /* GameLostController.m */,
+				7B86AF401399E66F0011918B /* GameLost.xib */,
+				7BCE1ABB139A1CFD0057983E /* LevelThreeController.h */,
+				7BCE1ABC139A1CFD0057983E /* LevelThreeController.m */,
+				7BCE1AC0139A1D100057983E /* LevelThree.xib */,
+				7BCE1EE0139CE93D0057983E /* GameOverController.h */,
+				7BCE1EE1139CE93D0057983E /* GameOverController.m */,
+				7BCE1EE5139CE9480057983E /* GameOver.xib */,
+				7BDE3747139E2C2100785688 /* MarkingScheme.h */,
+				7BDE3748139E2C2100785688 /* MarkingScheme.m */,
+				7B663C39139F71F700A2D1F5 /* FacebookController.h */,
+				7B663C3F139F722600A2D1F5 /* FacebookView.xib */,
+				7B663C3A139F71F700A2D1F5 /* FacebookController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* MemoryGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				7B663C09139F71A800A2D1F5 /* FBConnect */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7B518FF113A0E7A4007C17A8 /* JSON */,
+				32CA4F630368D1EE00C91783 /* MemoryGame_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7B51919413A21049007C17A8 /* button-15.wav */,
+				7B5190FA13A1EC8E007C17A8 /* icon.png */,
+				7B51919F13A21576007C17A8 /* alien_28.wav */,
+				7B663F6513A0CCB400A2D1F5 /* level20.png */,
+				7B5191FE13A22E6E007C17A8 /* applause-2.wav */,
+				7B663F4A13A0C69500A2D1F5 /* level21.png */,
+				7B663F4B13A0C69500A2D1F5 /* level22.png */,
+				7B663F4C13A0C69500A2D1F5 /* level23.png */,
+				7B663F4D13A0C69500A2D1F5 /* level24.png */,
+				7B663F4E13A0C69500A2D1F5 /* level25.png */,
+				7B663F4F13A0C69500A2D1F5 /* level26.png */,
+				7B663F5013A0C69500A2D1F5 /* level27.png */,
+				7B663F5113A0C69500A2D1F5 /* level28.png */,
+				7B663F4613A0C43F00A2D1F5 /* img0.png */,
+				7B663F3C13A0C35100A2D1F5 /* img2.png */,
+				7B663F3D13A0C35100A2D1F5 /* img3.png */,
+				7B663F3E13A0C35100A2D1F5 /* img4.png */,
+				7B663F3F13A0C35100A2D1F5 /* img5.png */,
+				7B663F3613A0C28200A2D1F5 /* img1.png */,
+				7B663E2E13A09BF900A2D1F5 /* color0.png */,
+				7B663E1313A099A800A2D1F5 /* color1.png */,
+				7B663E1413A099A800A2D1F5 /* color2.png */,
+				7B663E1513A099A800A2D1F5 /* color3.png */,
+				7B663E1613A099A800A2D1F5 /* color4.png */,
+				7B663E1713A099A800A2D1F5 /* color5.png */,
+				7BCE19871399F8DF0057983E /* MemoryGamePic.png */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* MemoryGame-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				7B51918B13A20EA2007C17A8 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B518FF113A0E7A4007C17A8 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				7B518FF213A0E7A4007C17A8 /* JSON.h */,
+				7B518FF313A0E7A4007C17A8 /* NSObject+SBJSON.h */,
+				7B518FF413A0E7A4007C17A8 /* NSObject+SBJSON.m */,
+				7B518FF513A0E7A4007C17A8 /* NSString+SBJSON.h */,
+				7B518FF613A0E7A4007C17A8 /* NSString+SBJSON.m */,
+				7B518FF713A0E7A4007C17A8 /* SBJSON.h */,
+				7B518FF813A0E7A4007C17A8 /* SBJSON.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		7B663C09139F71A800A2D1F5 /* FBConnect */ = {
+			isa = PBXGroup;
+			children = (
+				7B663C0A139F71A800A2D1F5 /* FBConnect.h */,
+				7B663C0B139F71A800A2D1F5 /* FBConnectGlobal.h */,
+				7B663C0C139F71A800A2D1F5 /* FBConnectGlobal.m */,
+				7B663C0D139F71A800A2D1F5 /* FBSession.h */,
+				7B663C0E139F71A800A2D1F5 /* FBSession.m */,
+				7B663C0F139F71A800A2D1F5 /* FBRequest.h */,
+				7B663C10139F71A800A2D1F5 /* FBRequest.m */,
+				7B663C11139F71A800A2D1F5 /* FBXMLHandler.h */,
+				7B663C12139F71A800A2D1F5 /* FBXMLHandler.m */,
+				7B663C13139F71A800A2D1F5 /* FBLoginButton.h */,
+				7B663C14139F71A800A2D1F5 /* FBLoginButton.m */,
+				7B663C15139F71A800A2D1F5 /* FBDialog.h */,
+				7B663C16139F71A800A2D1F5 /* FBDialog.m */,
+				7B663C17139F71A800A2D1F5 /* FBLoginDialog.h */,
+				7B663C18139F71A800A2D1F5 /* FBLoginDialog.m */,
+				7B663C19139F71A800A2D1F5 /* FBPermissionDialog.h */,
+				7B663C1A139F71A800A2D1F5 /* FBPermissionDialog.m */,
+				7B663C1B139F71A800A2D1F5 /* FBStreamDialog.h */,
+				7B663C1C139F71A800A2D1F5 /* FBStreamDialog.m */,
+				7B663C1D139F71A800A2D1F5 /* FBConnect.bundle */,
+			);
+			name = FBConnect;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* MemoryGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MemoryGame" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MemoryGame;
+			productName = MemoryGame;
+			productReference = 1D6058910D05DD3D006BFB54 /* MemoryGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MemoryGame" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* MemoryGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				7BA886921398D9CA0090D639 /* LevelOne.xib in Resources */,
+				7BA886B71398E34D0090D639 /* LevelTwo.xib in Resources */,
+				7B86AF411399E66F0011918B /* GameLost.xib in Resources */,
+				7BCE19811399F81E0057983E /* StartupPage.xib in Resources */,
+				7BCE19881399F8DF0057983E /* MemoryGamePic.png in Resources */,
+				7BCE1AC1139A1D100057983E /* LevelThree.xib in Resources */,
+				7BCE1EE6139CE9480057983E /* GameOver.xib in Resources */,
+				7B663C27139F71A800A2D1F5 /* FBConnect.bundle in Resources */,
+				7B663C40139F722600A2D1F5 /* FacebookView.xib in Resources */,
+				7B663E1813A099A800A2D1F5 /* color1.png in Resources */,
+				7B663E1913A099A800A2D1F5 /* color2.png in Resources */,
+				7B663E1A13A099A800A2D1F5 /* color3.png in Resources */,
+				7B663E1B13A099A800A2D1F5 /* color4.png in Resources */,
+				7B663E1C13A099A800A2D1F5 /* color5.png in Resources */,
+				7B663E2F13A09BF900A2D1F5 /* color0.png in Resources */,
+				7B663F3713A0C28200A2D1F5 /* img1.png in Resources */,
+				7B663F4013A0C35100A2D1F5 /* img2.png in Resources */,
+				7B663F4113A0C35100A2D1F5 /* img3.png in Resources */,
+				7B663F4213A0C35100A2D1F5 /* img4.png in Resources */,
+				7B663F4313A0C35100A2D1F5 /* img5.png in Resources */,
+				7B663F4713A0C43F00A2D1F5 /* img0.png in Resources */,
+				7B663F5213A0C69500A2D1F5 /* level21.png in Resources */,
+				7B663F5313A0C69500A2D1F5 /* level22.png in Resources */,
+				7B663F5413A0C69500A2D1F5 /* level23.png in Resources */,
+				7B663F5513A0C69500A2D1F5 /* level24.png in Resources */,
+				7B663F5613A0C69500A2D1F5 /* level25.png in Resources */,
+				7B663F5713A0C69500A2D1F5 /* level26.png in Resources */,
+				7B663F5813A0C69500A2D1F5 /* level27.png in Resources */,
+				7B663F5913A0C69500A2D1F5 /* level28.png in Resources */,
+				7B663F6613A0CCB400A2D1F5 /* level20.png in Resources */,
+				7B5190FB13A1EC8E007C17A8 /* icon.png in Resources */,
+				7B51919513A21049007C17A8 /* button-15.wav in Resources */,
+				7B5191A013A21576007C17A8 /* alien_28.wav in Resources */,
+				7B5191FF13A22E6E007C17A8 /* applause-2.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* MemoryGameAppDelegate.m in Sources */,
+				7BA8868E1398D9780090D639 /* LevelOneController.m in Sources */,
+				7BA886B31398E2F80090D639 /* LevelTwoController.m in Sources */,
+				7B86AF3C1399E6100011918B /* GameLostController.m in Sources */,
+				7BCE197D1399F8030057983E /* StartupPageController.m in Sources */,
+				7BCE1ABD139A1CFD0057983E /* LevelThreeController.m in Sources */,
+				7BCE1EE2139CE93D0057983E /* GameOverController.m in Sources */,
+				7BDE3749139E2C2100785688 /* MarkingScheme.m in Sources */,
+				7B663C1E139F71A800A2D1F5 /* FBConnectGlobal.m in Sources */,
+				7B663C1F139F71A800A2D1F5 /* FBSession.m in Sources */,
+				7B663C20139F71A800A2D1F5 /* FBRequest.m in Sources */,
+				7B663C21139F71A800A2D1F5 /* FBXMLHandler.m in Sources */,
+				7B663C22139F71A800A2D1F5 /* FBLoginButton.m in Sources */,
+				7B663C23139F71A800A2D1F5 /* FBDialog.m in Sources */,
+				7B663C24139F71A800A2D1F5 /* FBLoginDialog.m in Sources */,
+				7B663C25139F71A800A2D1F5 /* FBPermissionDialog.m in Sources */,
+				7B663C26139F71A800A2D1F5 /* FBStreamDialog.m in Sources */,
+				7B663C3B139F71F700A2D1F5 /* FacebookController.m in Sources */,
+				7B518FF913A0E7A4007C17A8 /* NSObject+SBJSON.m in Sources */,
+				7B518FFA13A0E7A4007C17A8 /* NSString+SBJSON.m in Sources */,
+				7B518FFB13A0E7A4007C17A8 /* SBJSON.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MemoryGame_Prefix.pch;
+				HEADER_SEARCH_PATHS = "../../facebook-facebook-ios-sdk-fc1cde2/src";
+				INFOPLIST_FILE = "MemoryGame-Info.plist";
+				PRODUCT_NAME = MemoryGame;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MemoryGame_Prefix.pch;
+				INFOPLIST_FILE = "MemoryGame-Info.plist";
+				PRODUCT_NAME = MemoryGame;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/saipujitha/Desktop/src,
+					2,
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../Downloads/MyGradesTutorial 4/facebook-iphone-sdk/src\"";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MemoryGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MemoryGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
